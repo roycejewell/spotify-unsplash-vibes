@@ -5,3 +5,8 @@ Applescript api to control local spotify as well as (in the future) Unsplash pho
 
 ###Getting started
 
+`npm i`
+
+`PORT=8080 npm start`
+
+navigate to `/api/play`
