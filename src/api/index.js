@@ -7,7 +7,7 @@ export default ({ config, db }) => {
 
 	api.get('/play', (req, res) => {
 		spotify.playTrack('spotify:track:47nvHdLEk5UkT8q7nvfPS6', () => {
-			res.send('Playing Spotify!');
+			res.json('Playing Spotify!');
 		});
 	});
 
