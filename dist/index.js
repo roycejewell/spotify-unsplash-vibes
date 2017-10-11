@@ -57,6 +57,10 @@ app.use(_bodyParser2.default.json({
 	limit: _config2.default.bodyLimit
 }));
 
+app.use('/', function (req, res, next) {
+	res.send('root');
+});
+
 // connect to db
 (0, _db2.default)(function (db) {
 
@@ -65,6 +69,12 @@ app.use(_bodyParser2.default.json({
 
 	// api router
 	app.use('/api', (0, _api2.default)({ config: _config2.default, db: db }));
+
+	// api router v1 hypothetical
+	// app.use('/api/v1', api({ config, db }));
+
+	// cms router hypothetical
+	// app.use('/cms', api({ config, db }));
 
 	app.server.listen(process.env.PORT || _config2.default.port, function () {
 		console.log('Started on port ' + app.server.address().port);

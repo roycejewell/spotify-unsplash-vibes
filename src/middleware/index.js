@@ -4,6 +4,7 @@ export default ({ config, db }) => {
 	let routes = Router();
 
 	// add middleware here
+	// auth, rerouting, etc
 
 	return routes;
 }

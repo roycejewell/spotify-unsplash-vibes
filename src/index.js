@@ -32,6 +32,12 @@ initializeDb( db => {
 	// api router
 	app.use('/api', api({ config, db }));
 
+	// api router v1 hypothetical
+	// app.use('/api/v1', api({ config, db }));
+
+	// cms router hypothetical
+	// app.use('/cms', api({ config, db }));
+
 	app.server.listen(process.env.PORT || config.port, () => {
 		console.log(`Started on port ${app.server.address().port}`);
 	});

@@ -6,9 +6,9 @@ export default ({ config, db }) => {
 	let api = Router();
 
 	api.get('/play', (req, res) => {
-		spotify.playTrack('spotify:track:47nvHdLEk5UkT8q7nvfPS6', () => {
-			res.json('Playing Spotify!');
-		}).catch(err=>res.json({err: err}))
+		spotify.playTrack('spotify:track:6PgVDY8GTkxF3GmhVGPzoB', () => {
+			res.json({song: 'Hold on, Im Comin', artist: 'Sam & Dave'});
+		})
 	});
 
 	return api;

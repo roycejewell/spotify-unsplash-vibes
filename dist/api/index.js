@@ -21,8 +21,8 @@ exports.default = function (_ref) {
 	var api = (0, _express.Router)();
 
 	api.get('/play', function (req, res) {
-		_spotifyNodeApplescript2.default.playTrack('spotify:track:47nvHdLEk5UkT8q7nvfPS6', function () {
-			res.json('Playing Spotify!');
+		_spotifyNodeApplescript2.default.playTrack('spotify:track:6PgVDY8GTkxF3GmhVGPzoB', function () {
+			res.json({ song: 'Hold on, Im Comin', artist: 'Sam & Dave' });
 		});
 	});
 

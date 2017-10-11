@@ -13,6 +13,7 @@ exports.default = function (_ref) {
 	var routes = (0, _express.Router)();
 
 	// add middleware here
+	// auth, rerouting, etc
 
 	return routes;
 };
